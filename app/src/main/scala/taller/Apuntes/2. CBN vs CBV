@@ -1,0 +1,81 @@
+CBN (CALL BY NAME):
+    - Si el argumento no se necesita no lo evalúa
+    Se trata de reducir las operaciones primero por nombres de funciones y por últimos los valores
+    Ejemplo:
+        1. sumOfSquares (3 , 2+2)
+        2. square(3) + square(2+2)
+        3. 3*3 + square(2+2)
+        4. 9 + square(2+2)
+        5. 9 + (2+2) * (2+2)
+        6. 9 + 4 * (2+2)
+        7. 9 + (4 * 4)
+        8. 9 + (16)
+        9. 25//
+
+CBV (CALL BY VALUE):
+    - Evalua cada argumento una sola vez
+    Se trata de reducir las operacion por valores hasta que se pueda aplicar la función
+    Ejemplo:
+        1. sumOfSquares ( 3 , 2+2)
+        2. SumOfSquares(3, 4)
+        3. Square(3) + Square(4)
+        4. 3*3 + Square(4)
+        5. 9 + square(4)
+        6. 9 + 4*4
+        7. 9 + 16
+        8. 25//
+
+EJEMPLO 2:
+    Para cada caso a continuación, analice cuál estrategia es más eficiente, o
+    si son iguales en número de pasos de la reducción:
+
+        def test(x: Int, y: Int) = x*x
+-----------------------------------------------------------------------------------------
+        test(2, 3):
+            CBN:
+                1. Test(2, 3)
+                2. 2*2
+                3. 4
+            CBV:
+                1. Test(2,3)
+                2. 2*2
+                3. 4
+-----------------------------------------------------------------------------------------
+        test(3+4, 8):
+            CBN:
+                1. test(3+4, 8)
+                2. (3*4) * (3*4)
+                3. 7 * (3*4)
+                4. 7 * 7
+                5. 49
+            CBV:
+                1. test(3+4 , 8)
+                2. test(7, 8)
+                3. 7 * 7
+                4. 49
+-----------------------------------------------------------------------------------------
+        test( 7 , 2∗4):
+            CBN:
+                1. test(7, 2*4)
+                2. 7 * 7
+                3. 49
+            CBV:
+                1. test(7, 2*4)
+                2. test(7, 8)
+                3. 7 * 7
+                4. 49.
+-----------------------------------------------------------------------------------------
+        test(3+4, 2∗4):
+            CBN:
+                1. test(3+4, 2∗4)
+                2. (3 + 4) * (3 + 4)
+                4. 7 * (3*4)
+                5. 7 * 7
+                6. 49
+            CBV:
+                1. test(3+4, 2∗4)
+                2. test(7, 2*4)
+                3. test(7, 8)
+                4. 7 * 7
+                5. 49
+-----------------------------------------------------------------------------------------

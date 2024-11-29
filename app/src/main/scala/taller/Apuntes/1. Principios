@@ -1,0 +1,55 @@
+YEIII Por fin pude hacer que esto funcione xdd
+
+Bien Fase 1: Scala con ItelliJ completada.
+
+PRINCIPIOS:
+
+    Paradigmas: Describe conceptos y patrones de pensamientos de las disciplinas.
+        Tipos de Paradigmas de la programación:
+            Declarativo: Funcional, Lógico y descriptivo
+            Concurrente: Declarativo, por paso de mensajes, con estado
+            Con estado: Imperativo
+            Orientado a Objetos: paradigma con estado
+            Relacional
+            Distribuido
+            etc.
+
+COMO ESCALAR LA PROGRAMACIÓN?
+    - Nos concentraremos en definir teorias para operadores
+    - Minimazar cambios de estado
+    - Usaremos funciones como operadores
+
+QUE ES LA PROGRAMACIÓN FUNCIONAL (PF)?
+
+    Programar sin variables mutables
+    Programar sin ciclos
+    programar sin asignaciones
+    Usaremos funciones, invocaciones a funciones siendo estas valores
+
+    FUNCIONES:
+        Ciudadanos de primer Clase
+        Se pueden definir donde sea
+        Pueden ser parámetros de otras funciones o resultados de otras funciones
+
+POR QUÉ SCALA:
+    Usaremos Scala como el lenguaje de programaci´on del curso.
+
+    corre sobre JVM y su sintaxis es muy parecida a la de Java (menos esfuerzo inicial)
+    implementa el paradigma funcional de forma elegante
+    implementa la concurrencia de alto nivel (m´as all´a de la
+    concurrencia con estado compartido)
+    ha sido diseñado para el procesamiento de grandes cantidades de datos, y eso puede ser muy ´util para los estudiantes.
+
+DECLARAR FUNCIONES:
+
+    - def Nombre = Valor:
+        def Size = 2
+
+    - def Nombre(Parámetro) = valor:
+        def square(x: Double) = x*x
+
+    - def Nombre(Parámetro): ValorRetornar = valor:
+        Square(x: Double): Double = x*x
+
+
+

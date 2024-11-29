@@ -5,8 +5,20 @@ package taller
 
 object App {
   def main(args: Array[String]): Unit = {
-    println(greeting())
+
+    val ObjFunciones = new Funciones()
+
+    val size = ObjFunciones.size
+    println((2 * size) * size)
+
+    val square = ObjFunciones.square(2)
+    println(square)
+    
+    val square_of_square = ObjFunciones.square(10)
+    println(square_of_square)
+
+    val SumOfSquares = ObjFunciones.SumOfSquares(10, 2)
+    println(SumOfSquares)
   }
 
-  def greeting(): String = "Hello, world!"
 }
