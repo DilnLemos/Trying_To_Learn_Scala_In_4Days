@@ -1,0 +1,32 @@
+BLOQUES Y VISIBILIDAD
+    Cada bloque de código está compuesto pora llaves {}
+
+    El bloque de código que está dentro de una función es conocido como cuerpo de la función
+    El bloque de código que está dentro de una clase es conocido como cuerpo de la clase
+
+    Lo que está dentro del bloque de código solo es visible por la función
+
+    Es decir los valores dentro de una función solo se usan en esa función
+    EJEMPLO:
+        val x = 5
+            def f(y: Int) = y + 1
+            val result = {
+              val x = f(3)
+              x*x
+            } + 5
+
+            println(result)
+        SOLUCIÓN:
+            X = 5
+            f(y) = y + 1
+            result = {
+            x = f(3) = 4
+            4*4 = 16
+            } + 5
+            21//
+
+
+CONCLUSIÓN:
+
+    El alcance léxico sirve para definir los bloques de código para las funciones, estos ocultaran
+    los valores de las variables.

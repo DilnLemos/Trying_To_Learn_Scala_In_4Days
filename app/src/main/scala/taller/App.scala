@@ -8,17 +8,23 @@ object App {
 
     val ObjFunciones = new Funciones()
 
-    val size = ObjFunciones.size
-    println((2 * size) * size)
+    /*
+        val size = ObjFunciones.size
+        println((2 * size) * size)
 
-    val square = ObjFunciones.square(2)
-    println(square)
-    
-    val square_of_square = ObjFunciones.square(10)
-    println(square_of_square)
+        val square = ObjFunciones.square(2)
+        println(square)
 
-    val SumOfSquares = ObjFunciones.SumOfSquares(10, 2)
-    println(SumOfSquares)
+        val square_of_square = ObjFunciones.square(10)
+        println(square_of_square)
+
+        val SumOfSquares = ObjFunciones.SumOfSquares(10, 2)
+        println(SumOfSquares)
+        */
+
+    val rec_fac = ObjFunciones.recursividad_Factorial(4)
+    val rec_fac_lin = ObjFunciones.recursividad_factorial_lineal(1, 1, 4)
+    if (rec_fac == rec_fac_lin) println(rec_fac, rec_fac_lin)
   }
 
 }

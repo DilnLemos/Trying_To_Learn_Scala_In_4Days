@@ -1,0 +1,23 @@
+FUNCIONES:
+    Las funciones anidadas nos permiten tener menos errores con variable ya que tienen facil
+    acceso a variables del entorno y su inmutabilidad también es útil
+
+    Permiten la recursividad sin utilizar ciclos while, for, etc
+
+    Una función especifíca la evaluación de un proceso computacional
+
+PROCESOS:
+    Los más comunes:
+        recursión lineal e iteraciones
+        Recursión en arbol
+
+RECURISIVIDAD:
+    De cola:
+        Implementa procesos iterativos o se transforman en iteraciones
+        Puede usar la pila para su ultimo llamado a si misma
+        Usa menos espacio en la pila
+    Lineal:
+        Tiene expasión y contracción de código
+        Requiere que cada llamada recursiva espere de la resolucion de la siguiente
+    Arbol:
+        Divide el problema en proceso más pequeños
