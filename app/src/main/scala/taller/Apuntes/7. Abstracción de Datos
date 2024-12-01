@@ -1,0 +1,12 @@
+La abstracción de datos permite:
+    Elevar el nivel conceptual: permite modelar datos sin importar
+    como se construyan por debajo
+
+    Incrementar modularidad: Permite tener un mejor control de los programas al no
+    enfocarse en la construcción de datos
+
+    Fortalecer el poder expresivo del lenguaje: Poder utilizar la nueva
+                                                abstracci´on de datos como cualquier otra abstracci´on ya existente
+                                                ampl´ıa el poder expresivo del lenguaje
+
+    
