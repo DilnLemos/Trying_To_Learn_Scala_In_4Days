@@ -7,7 +7,9 @@ object App {
   def main(args: Array[String]): Unit = {
 
     val ObjFunciones = new Funciones()
-
+    val ObjT1ListaFactoriales = new T1ListaFactoriales()
+    val ObjT1ejercicioListas = new T1EjercicioListas()
+    val ObjFuncionesAnonimas = new FuncionesAnonimas()
     /*
         val size = ObjFunciones.size
         println((2 * size) * size)
@@ -20,11 +22,23 @@ object App {
 
         val SumOfSquares = ObjFunciones.SumOfSquares(10, 2)
         println(SumOfSquares)
-        */
+
 
     val rec_fac = ObjFunciones.recursividad_Factorial(4)
     val rec_fac_lin = ObjFunciones.recursividad_factorial_lineal(1, 1, 4)
     if (rec_fac == rec_fac_lin) println(rec_fac, rec_fac_lin)
-  }
 
+
+    val trys = ObjT1ListaFactoriales.T1ListaFactorial(4)
+    println(trys)
+
+
+     val lista = ObjT1ejercicioListas.repetirListas(List(1,2,3), 2)
+    println(lista)
+
+
+    val lista2 = ObjT1ejercicioListas.filtrarListas("menor", 6, List(1,2,3,4,5,6,7))
+    print(lista2)
+    */
+  }
 }

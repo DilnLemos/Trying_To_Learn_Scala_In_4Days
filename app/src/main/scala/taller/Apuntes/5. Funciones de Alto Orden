@@ -1,0 +1,8 @@
+Las funciones son ciudadanos de primera CLase.
+Las funciones y valores son lo mismo
+Una función puede de tener de parámetro otra función
+Una función puede retornar otra función
+
+FUNCIONES ANÓNIMAS
+    Es  un valor que representa una función
+    Se definen directamente con funciones
