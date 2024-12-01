@@ -1,0 +1,51 @@
+Las listas son inmutables y recursivas
+todos sus valores osn del mismo tipo
+
+Toda lista se construye a partir del Nil (vacio) y ::
+
+Ejemplo: construir una lista cuyo primer elemnto es X y el resto es XS:
+
+    val frutas = "manzana" :: "pera" :: "..." :: Nil
+    val vacia = Nil
+
+Asi para cualquier tipo
+
+
+ASOCIATIVIDAD
+
+todo comparativo que termine en ":" asocia a la derecha
+EJEMPLO:
+    A :: B :: C = A :: (B :: C)
+
+    val numeros: List[Int] = 1 :: 2 :: 3 :: 4 :: 5 :: Nil
+                = 1 :: (2 :: (3 :: (4 :: (5 :: Nil))))
+                = List(1, 2, 3, 4, 5)
+
+MÉTODOS PARA LISTAS:
+
+Head: Retorna el primer valor de la lista
+Tail: Retorna la lista sin el primer valor
+isEmpty: Retorna true si la lista es vacia, false sino
+(Se pueden anidar)
+
+numeros.head: Int = 1
+numeros.tail: List[Int] = (2, 3, 4, 5)
+numeros.tail.head: Int = 2
+
+
+PATRONES DE LISTAS:
+Nil: patron constante Nil, siempre existe al final
+p :: ps: patron que reconoce la cabeza de la lista (p) y la une con su cola (ps)
+
+MAS MÉTODOS:
+
+xs.length = longitud de la lista
+xs.last = ultimo valor de xs, si es vacia error
+xs.init = todos los valores de la lista menos el ultimo, si es vacia error
+xs take n = todos los valores de la lista hasta n, o la lista si la longitud de la lista es menor a n
+xs drop n = el resto de la lista despues de quitar los n primeros
+xs(n) = valor de lista n.esimo
+
+xs ++ ys = concatenar elementos de xs con ys
+xs.reverse = da vuelta a la lista
+xs updated (n, x) = todos los elementos de la lista salvo n que ahora es x
