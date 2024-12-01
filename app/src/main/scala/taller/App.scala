@@ -10,9 +10,9 @@ object App {
     val ObjT1ListaFactoriales = new T1ListaFactoriales()
     val ObjT1ejercicioListas = new T1EjercicioListas()
     val ObjFuncionesAnonimas = new FuncionesAnonimas()
-    val x = new Racional(2,3)
+    val x = new Racional(2,7)
     val y = new Racional(4,5)
-    val z = new Racional(3,1)
+    val z = new Racional(3,8)
     println(x.suma(y))
     println(z.multiplicacion(x).suma(y).suma(x))
     /*

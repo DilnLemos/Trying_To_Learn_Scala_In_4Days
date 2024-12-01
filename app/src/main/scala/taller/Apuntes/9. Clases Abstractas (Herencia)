@@ -1,0 +1,6 @@
+Las clases abstractas proveen métodos a otras funciones
+pero sin implementaciones
+
+En estas no se puede usar new, es decir no se usan instancias
+
+Solo se puede extender de una sola clase

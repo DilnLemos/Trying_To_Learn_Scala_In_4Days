@@ -1,0 +1,16 @@
+Ambas son validaciones de código en un punto especifico
+
+    Require: Impone una condición cuando se invoca una función,
+     y lanza una excepcion si no se cumple
+
+    Assert: Verifica que la condición puesta se cumpla
+
+
+    Ejemplo require:
+    class Racional(x: Int, y: Int){
+    require(y > 0, "El denominador debe ser positivo")
+    }
+
+    Ejemplo Assert:
+    val x = sqrt(y)
+    assert(x >= 0)
