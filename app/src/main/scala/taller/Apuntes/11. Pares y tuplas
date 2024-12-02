@@ -1,0 +1,22 @@
+Una pareja compuesta por X y Y se escribe: (x, y)
+
+val pareja = ("numero", 42)
+val pareja: (String, Int) = (numero, 42)
+
+Se pueden usar como patrones:
+
+val (cadena, valor) = pareja
+val cadena: String = numero
+val valor: Int = 42
+
+vienen de Scala.Tuplen[T1, ..., TN)
+
+Los campos de una tupla se pueden acceder via _1, _2
+
+val (cadena, valor) = pareja
+
+val cadena = pareja._1
+val cadena: String = numero
+
+val numero = pareja._2
+val numero: Int = 42

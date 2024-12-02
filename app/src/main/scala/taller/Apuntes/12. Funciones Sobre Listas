@@ -1,0 +1,26 @@
+Se pueden identificar patrones recurrentes:
+Transformar cada elemento de la lista de cierta manera
+Recuperar los elementos de la lista que satisfagan algún criterio
+Combinar los elementos de la lista usando un operador
+
+Map: aplica una función a cada elemento de una lista
+    xs.map(x => x*x)
+
+filter: filtra elementos de una lista
+    xs filter (x => (x > 0))
+
+empaquetar: Devuelve una lista de sublistas de elementos consecutivos
+    empaquetar(List("a","a","b","c","c","b")
+    = List(List("a","a"), List("b"), List("c","c"),List("b"))
+
+Reduce: reduce una lista de izq a der o visceversa con una operacion binaria
+NO DEFINIDA EN LISTAS VACIAS
+    def suma(xs: List[Int]): Int = (0 :: xs) reduceleft ((x, y) => x + y)
+    def producto(xs: List[Int]): Int = (1 :: xs) reduceleft ((x, y) => x * y)
+
+FoldLeft: Aplica una operación a varios elementos de una lista de izq a der pero si hay lista vacia retorna un acumulador
+    def suma(xs: List[Int]): Int = (xs foldLeft 0) ((x, y) => x + y)
+    def producto(xs: List[Int]): Int = (xs foldLeft 1) ((x, y) => x * y)
+
+EXISTE IGUAL PARA LA DERECHA
+
