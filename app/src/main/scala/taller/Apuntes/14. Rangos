@@ -1,0 +1,15 @@
+Secuencia de espaciado uniforme
+
+Inclusivo (de n a m)
+val r: Range = 1 to 5
+val range = Range 1 to 5
+
+Exclusivo (de n hasta antes de m)
+val range = 1 until 5
+
+Determinar pasos
+
+val range = 1 to 6 by 2
+
+val range = 6 to 1 by -2
+

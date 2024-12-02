@@ -1,0 +1,11 @@
+Los vectores proveen tiempos más balanceados sobre sus elementos
+al momento de acceder a ellos
+
+val nums = Vector(10,12,6,8)
+
+OPERACIONES DE VECTORES
+
+NO  tienen ::
+
+x :+ xs = vector cuyo primer elemento es x y luego elementos de xs
+xs :+ x = vector cuyo ultimo elemento es x y primero los elementos de xs

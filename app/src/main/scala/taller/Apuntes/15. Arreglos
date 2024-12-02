@@ -1,0 +1,23 @@
+val xs: Array[Int] = Array(1,2,3)
+
+xs.map(x => 2*x)
+
+val ys: String = "Hola-Mundo"
+ ys = Hola Mundo
+
+ys filter (_.IsUpper)
+
+OPERACIONES SOBRE SECUENCIAS:
+
+xs exists p: true si hay un elemento x de xs que cumpla p(x)
+xs forall p: true si todo elemento x de xs cumple p(x)
+xs zip ys: devuelve una secuencia de elementos de xs con ys en la misma posición
+es decir hace parejas de tipo (x, y)
+
+xs.unzip = si hay parejas las deshace
+xsflatmap f: devuelve una secuencia resultante de aplicar f a cada elemento
+
+xs.sum = suma todos los elementos de xs si son numericos
+xs.prod = hace multiplicación a todos los elementos de xs si son numeros
+xs.max = retorna el maximo de xs
+xs.min = retorna el minimo de xs

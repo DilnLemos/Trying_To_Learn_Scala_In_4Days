@@ -1,6 +1,6 @@
 Las listas son inmutables y recursivas
-todos sus valores osn del mismo tipo
-
+todos sus valores son del mismo tipo
+Son secuencialmente lineales: El acceso al primer valor es más rápido a uno intermedio o final
 Toda lista se construye a partir del Nil (vacio) y ::
 
 Ejemplo: construir una lista cuyo primer elemnto es X y el resto es XS:
