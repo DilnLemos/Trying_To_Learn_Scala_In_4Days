@@ -51,5 +51,13 @@ DECLARAR FUNCIONES:
     - def Nombre(Parámetro): ValorRetornar = valor:
         Square(x: Double): Double = x*x
 
+La programación funcional provee un conjunto coherente de conceptos y técnicas de programación basados en:
+Programación de alto orden.
+Reconocimiento de patrones.
+Colecciones inmutables.
+Ausencia de estado explícito.
+Estrategias de evaluación flexible: ansiosa/perezosa/por nombre.
+La programación funcional provee una caja de herramientas útiles para todo programador.
+La programación funcional provee una forma diferente de pensar para programar.
 
 

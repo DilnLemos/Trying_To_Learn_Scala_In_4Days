@@ -1,0 +1,14 @@
+El map es una coleccion de tipo:
+    (llave, valor)
+
+val x = Map("Colombia" -> "Bogota", "x" -> "x" ...)
+x("Colombia")
+
+Sin asociación hay error
+
+con WithDefaultValue convierte una asociación en
+
+val x1 = x withDefaultValue "Desconocido"
+
+cap1("US") = Desconocido
+

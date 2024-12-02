@@ -1,0 +1,28 @@
+las expresiones For para mantener la expresividad
+facilitando el entendimiento de la sem´antica de lo que se escribe.
+
+for (s) yield e
+s = secuencia de generadores y filtros
+e = expresión cuyo valor se retorna en cada iteración
+
+Generador = expresión de la forma p <- e, donde p es un patron
+y e una expresión que se evalúa a un valor de tipo colección
+
+filtro = expresión de la forma if f donde f es booleana
+
+
+prodescalar(xs: Vector[Double], ys: Vector[Double]: Vector[Double] = {
+
+    for ((x, y) <- xs zip ys) yield (x * y)).sum
+}
+
+FOR Es una reducción a map, flatmap, filter etc.
+
+N´otese que la traducci´on del For no se limita a listas, secuencias o
+colecciones.
+
+La traducci´on est´a basada en contar con los m´etodos map, flatMap
+y withFilter.
+
+Hay diversidad de tipos donde esto es muy ´util: arreglos, iteradores,
+bases de datos, datos XML, analizadores, . .

@@ -1,0 +1,17 @@
+Los conjuntos (Set) son otras abstracci´on b´asica de las colecciones
+de Scala.
+
+Los conjuntos se escriben similarmente a las secuencias:
+    val frutas = Set(”lulo”, ”banano”, ”curuba”, ”chontaduro”)
+    val s = (1 to 6).toSet
+
+La mayor´ıa de las operaciones sobre secuencias, est´an disponibles
+sobre conjuntos
+
+
+Los conjuntos no tienen orden. Entonces las operaciones que tengan
+que ver con el orden no aplican a los conjuntos.
+
+Los conjuntos no tienen elementos duplicados.
+
+existe el contains: contiene, retorna boolean
